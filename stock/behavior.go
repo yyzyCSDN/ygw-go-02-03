@@ -11,7 +11,7 @@ func Window[T any](values []T, start, count int) ([]T, error) {
 	if start >= len(values) || count == 0 {
 		return []T{}, nil
 	}
-	end := start + count - 1
+	end := start + count
 	if end > len(values) {
 		end = len(values)
 	}
